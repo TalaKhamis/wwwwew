@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>veterinary clinic</title> 
+        <link rel="stylesheet" href="Disgndby22.css">
+        
+    </head>
+    <body>
+      <div class="Ta1">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ym.html">Services</a></li>
+          <li><a href="filee.html">folder</a></li>
+          <li><a href="time.html">time work</a></li>
+          <li><a href="contactUs.html">contact us</a></li>
+    </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <h1>Designed By :</h1>
+        <p class="a">This website was designed by a group of female students from the College of Computing and Information Technology,
+         Internet and Web Technology course</p>
+        <p>Group Members</p>
+        <ul id="groupList"></ul>
+
+        <script>
+            const members = ['Tala Albalawi', 'Reyoof Alotaibi  ', 'Sadeem Alharbi', 'Eman Albalawi'];
+            const groupList = document.getElementById('groupList');
+    
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+    
+            function displayRandomMembers() {
+                const shuffledMembers = shuffleArray(members);
+    
+                shuffledMembers.forEach((member) => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = member;
+                    groupList.appendChild(listItem);
+                });
+            }
+    
+            displayRandomMembers();
+        </script>
+             
+        </body>
+        </html>
+        
+        
+        
+        
+        
+    <img src="صورة واتساب بتاريخ 1445-05-04 في 18.36.08_5cf05c08.jpg" style="width: 220px;height: 220px; float:left;">
+    
+    </body>
+</html>
